@@ -1,0 +1,40 @@
+header{
+  height:70vh;
+  border-bottom-left-radius:45%;
+  border-bottom-right-radius:45%;
+  position:relative;
+  overflow:hidden;
+}
+
+header .header__top{
+  width:100%;
+  height:100%;
+  border-bottom-left-radius:45%;
+  border-bottom-right-radius:45%;
+  background:rgba(0,0,0,.5);
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+
+header .hero__img{
+  width:100%;
+  height:100%;
+}
+
+header .hero__img img{
+  object-fit:cover;
+}
+
+@media only screen and (max-width:850px){
+  header{
+    height:100vh;
+    border-radius:0;
+  }
+
+  header .header__top{
+    border-radius:0;
+  }
+}
+

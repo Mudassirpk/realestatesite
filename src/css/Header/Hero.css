@@ -1,0 +1,136 @@
+.hero{
+  width:100%;
+  height:calc(100% - 8vh);
+  margin-top:8vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero .hero__header{
+  max-width:500px;
+  text-align:center;
+  color:white;
+  font-size:3rem;
+}
+
+.hero .hero__options{
+  display:flex;
+  flex-direction:row;
+  gap:2rem;
+  align-items:center;
+  margin:3rem 0;
+}
+
+.hero .hero__option{
+  display:flex;
+  flex-direction:row;
+  gap:1rem;
+  font-size:1.5rem;
+  color:white; 
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+}
+
+.hero .hero__option__iconwrapper{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  padding:.8rem;
+  background:rgba(181, 181, 181, 0.66);
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.hero .hero__option__iconwrapper:hover{
+  background: #48de9b;
+}
+
+.hero form{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  border-radius:.5rem;
+  overflow:hidden;
+}
+
+.hero form #date{
+  display:none;
+}
+
+.hero form input,
+.hero form label,
+.hero form button{
+  border:1px solid  rgba(181, 181, 181, 0.5);
+}
+
+.hero form input{
+  font-size:1.5rem;
+  padding:.8rem 1rem;
+}
+
+.hero form label{
+  padding:.55rem 1rem;
+  background:white;
+}
+
+.hero form .date__icon{
+  color:#48de9b;
+  font-size:2rem;
+  background:white;
+  cursor:pointer;
+}
+
+.hero form button{
+  padding:.8rem 1rem;
+  font-weight:600;
+  font-size:1.5rem;
+  display:flex;
+  flex-direction:row;
+  gap:1rem;
+  align-items:center;
+  background: #48de9b;
+  color:white;
+  cursor:pointer;
+}
+
+.hero .information__fact{
+  color:white;
+  margin:2rem 0;
+}
+
+@media only screen and (max-width:768px){
+
+  .hero .hero__header{
+    font-size:2.5rem;
+    margin-bottom:3rem;
+  }
+
+  .hero form{
+    flex-direction:column;
+    margin:4rem 0;
+  }
+
+  .hero form input,
+  .hero form button,
+  .hero form label{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero form button{
+    justify-content:center;
+  }
+
+  .hero .hero__options{
+    padding:0 2rem;
+    flex-wrap:wrap;
+  }
+
+  .hero .information__fact{
+    text-align:center;
+  }
+}

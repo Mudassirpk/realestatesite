@@ -1,0 +1,114 @@
+.properties{
+  width:80%;
+  margin:4rem 10%;
+}
+
+.properties .properties__header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.properties .properties__header .properties__filter{
+  display:flex;
+  flex-direction:row;
+  gap:1rem;
+}
+
+.properties .properties__header .properties__filter button{
+  padding:.5rem 1rem;
+  border-radius:1rem;
+  background:transparent;
+  border:1px solid #35c182;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.properties .properties__header .properties__filter button:hover{
+  color:white;
+  background:#35c182;
+}
+
+.properties .properties__title{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  color:#35c182;
+  margin-bottom:1rem;
+}
+.properties .properties__status{
+   margin-bottom:2rem;
+}
+.properties .properties__grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-column-gap:1rem;
+  grid-row-gap:1rem;
+  padding:1rem;
+}
+
+.properties .properties__grid .property{
+  overflow:hidden;
+}
+
+.properties .properties__grid .property .card__img{
+  aspect-ratio:1;
+  position:relative;
+  border-radius:.5rem;
+}
+
+.properties .properties__grid .property .card__img img{
+  object-fit:cover;
+}
+
+.properties .properties__grid .property .card__img .price{
+  position:absolute;
+  bottom:1rem;
+  left:1rem;
+  color:white;
+}
+
+.properties .properties__grid .property .card__body{
+  padding:1rem 2rem;
+  background-color:white;
+  border-radius:0 0 .5rem .5rem;
+}
+
+.properties .property .card__body .location{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:.5rem;
+  margin:1rem 0;
+  color:grey;
+}
+
+.properties .property .card__body .features .feature{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:.5rem;
+  color:#48de9b;
+}
+
+.properties .property .card__body .features {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin:1rem 0;
+}
+
+@media only screen and (max-width:768px){
+  .properties .properties__grid{
+    grid-template-columns:2fr 2fr;
+  } 
+}
+
+
+@media only screen and (max-width:475px){
+  .properties .properties__grid{
+    grid-template-columns:4fr;
+  } 
+}
