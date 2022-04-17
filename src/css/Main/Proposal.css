@@ -49,8 +49,18 @@
   color:#35c182;
 }
 
+
+
 @media only screen and (max-width:800px){
   .proposal{
     flex-direction:column;
+  }
+
+  .proposal .proposal__img {
+    width: 100%;
+  }
+
+  .proposal .proposal__text{
+    width: 100%;
   }
 }
